@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BookShelf</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav>
+<div class="logo">📚 BookShelf</div>
+<button class="sign-btn" onclick="openLogin()">Sign In</button>
+</nav>
+
+<section class="hero" id="landing">
+
+<h1>Your Next Great Read Awaits</h1>
+
+<p>
+Track the books you've read and discover personalized recommendations.
+</p>
+
+<button onclick="openLogin()">Get Started — It's Free</button>
+
+</section>
+
+
+<div class="overlay" id="login">
+
+<div class="login-card">
+
+<h2>Welcome Back</h2>
+
+<input type="email" placeholder="you@example.com">
+
+<input type="password" placeholder="Password">
+
+<button onclick="login()">Sign In</button>
+
+</div>
+
+</div> 
+
+<div id="dashboard">
+
+<div class="add-book-box">
+
+<h2>Add Book</h2>
+
+<input type="text" id="title" placeholder="Book title">
+
+<input type="text" id="author" placeholder="Author">
+
+<select id="genre">
+
+<option>Fantasy</option>
+<option>Fiction</option>
+<option>Non-Fiction</option>
+<option>Mystery</option>
+<option>Romance</option>
+<option>Science Fiction</option>
+<option>Finance</option>
+
+</select>
+
+<button onclick="addBook()">Add Book</button>
+
+</div>
+
+<h2>⭐ Get Recommendations</h2>
+
+<div class="recommend-box">
+
+<select id="recGenre">
+
+<option value="">Select Genre</option>
+<option value="Fantasy">Fantasy</option>
+<option value="Fiction">Fiction</option>
+<option value="Non-Fiction">Non-Fiction</option>
+<option value="Mystery">Mystery</option>
+<option value="Romance">Romance</option>
+<option value="Science Fiction">Science Fiction</option>
+<option value="Finance">Finance</option>
+
+</select>
+
+<button onclick="recommendBooks()">Recommend</button>
+
+</div>
+
+<div class="grid" id="recommendGrid"></div>
+
+<h2>📖 My Books</h2>
+
+<div class="grid" id="myBooks"></div>
+
+</div>
+
+<script src="java.js"></script>
+
+</body>
+</html>
